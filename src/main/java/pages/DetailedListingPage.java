@@ -79,7 +79,7 @@ public class DetailedListingPage {
         System.out.println(carSpecs);
         carSpecs.removeAll(displayedOptions);
 
-        if(carSpecs != null){
+        if(!carSpecs.isEmpty()){
             fail(carSpecs + " : not displayed \n validateDetailsDisplayed --- All required specs are not displayed");
         }
     }

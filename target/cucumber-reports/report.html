@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 28, 2020 02:18:51 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 28, 2020 02:51:55 AM</span>
 				</a>
 			</li>
 			<li>
@@ -80,7 +80,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -146,10 +145,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -161,10 +160,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='69.231%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='94.737%'><span class='strong'>18</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='23.077%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='5.263%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -181,12 +180,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Test the Trade Me SandBox Website</span>
-						<span class='test-time'>Aug 28, 2020 02:18:51 AM</span>
+						<span class='test-time'>Aug 28, 2020 02:51:55 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 23s+825ms</span>
+	<span class='duration right label'>0h 0m 18s+860ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Check there is at least one listing in the TradeMe UsedCars category</span>
@@ -226,41 +225,41 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='7' status='skip'>
-	<span class='duration right label'>0h 0m 6s+484ms</span>
+<div class='scenario node' test-id='7' status='pass'>
+	<span class='duration right label'>0h 0m 37s+938ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Check that the make �Kia� exists</span>
+		<span class="desc-text">Check that the make ‘Kia’ exists</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='8' class='node given skip' status='skip'>
+		<li test-id='8' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given I am on the TradeMe SandBox WebPage</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='9' class='node when skip' status='skip'>
+		<li test-id='9' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When I search for "Kia" cars</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='10' class='node then skip' status='skip'>
+		<li test-id='10' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then I should only see cars related to my search option</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
 <div class='scenario node' test-id='11' status='fail'>
-	<span class='duration right label'>0h 0m 31s+824ms</span>
+	<span class='duration right label'>0h 0m 30s+678ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Confirm all the details are displayed of selected used car</span>
@@ -317,8 +316,66 @@
 	at org.junit.Assert.fail(Assert.java:88)
 	at pages.DetailedListingPage.validateDetailsDisplayed(DetailedListingPage.java:83)
 	at steps.TradeMeHomePageSteps.i_should_be_able_to_see_the_following_details(TradeMeHomePageSteps.java:71)
-	at ?.Then I should be able to see the following details(TradeMeSandBox.feature:22)
+	at ✽.Then I should be able to see the following details(TradeMeSandBox.feature:23)
 </pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='18' status='pass'>
+	<span class='duration right label'>0h 0m 17s+593ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Confirm all the details are displayed of selected used car without Seats details</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='19' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given I am on the TradeMe SandBox WebPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='20' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I navigate to "Motors" category</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='21' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I search for "2016 Mazda GSX PT" car on Motors page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='22' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then I should be able to see atleast one listing in that category</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I select the available car</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then I should be able to see the following details</span>
+				<div class='pre'><table><tr><td>Number plate</td></tr><tr><td>Kilometres</td></tr><tr><td>Body</td></tr><tr><td>Fuel type</td></tr><tr><td>Engine size</td></tr><tr><td>Transmission</td></tr><tr><td>History</td></tr><tr><td>Registration expires</td></tr><tr><td>WoF expires</td></tr><tr><td>Model detail</td></tr></table></div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -379,13 +436,13 @@
                             <div class='author-heading'>
                                 <span class='author-name'>DevarshChaturvedi</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>1</span>
+                                        <span class='label pass'>3</span>
                                         <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 1</span>
+                                    <span class='label green accent-4 white-text'>Passed: 3</span>
                                     <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
@@ -401,14 +458,24 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Aug 28, 2020 02:18:52 AM</td>
+                                                <td>Aug 28, 2020 02:51:55 AM</td>
                                                 <td class='linked' test-id='2'>Test the Trade Me SandBox Website.Check there is at least one listing in the TradeMe UsedCars category</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Aug 28, 2020 02:19:32 AM</td>
+                                                <td>Aug 28, 2020 02:52:16 AM</td>
+                                                <td class='linked' test-id='7'>Test the Trade Me SandBox Website.Check that the make ‘Kia’ exists</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 28, 2020 02:52:55 AM</td>
                                                 <td class='linked' test-id='11'>Test the Trade Me SandBox Website.Confirm all the details are displayed of selected used car</td>
                                                 <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 28, 2020 02:53:26 AM</td>
+                                                <td class='linked' test-id='18'>Test the Trade Me SandBox Website.Confirm all the details are displayed of selected used car without Seats details</td>
+                                                <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -468,14 +535,14 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Aug 28, 2020 02:20:04 AM</td>
+                                                        <td>Aug 28, 2020 02:53:25 AM</td>
                                                         <td class='linked' test-id='17'>Test the Trade Me SandBox Website.Confirm all the details are displayed of selected used car.Then I should be able to see the following details</td>
                                                         <td><pre><pre>java.lang.AssertionError: [Seats, Model detail] : not displayed 
  validateDetailsDisplayed --- All required specs are not displayed
 	at org.junit.Assert.fail(Assert.java:88)
 	at pages.DetailedListingPage.validateDetailsDisplayed(DetailedListingPage.java:83)
 	at steps.TradeMeHomePageSteps.i_should_be_able_to_see_the_following_details(TradeMeHomePageSteps.java:71)
-	at ?.Then I should be able to see the following details(TradeMeSandBox.feature:22)
+	at ✽.Then I should be able to see the following details(TradeMeSandBox.feature:23)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -508,31 +575,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>13</div>
+					<div class='panel-lead'>19</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 28, 2020 02:18:51 AM</div>
+					<div class='panel-lead'>Aug 28, 2020 02:51:55 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 28, 2020 02:20:05 AM</div>
+			 		<div class='panel-lead'>Aug 28, 2020 02:53:45 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>74,260ms</div>
+					<div class='panel-lead'>110,529ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -589,23 +656,23 @@
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 1,
+				passChild: 3,
 				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 1,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 1,
 				
-				passGrandChild: 9,
+				passGrandChild: 18,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 3,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 4,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		
